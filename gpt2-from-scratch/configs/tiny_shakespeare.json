@@ -1,0 +1,27 @@
+{
+  "model": {
+    "block_size": 128,
+    "n_layer": 4,
+    "n_head": 4,
+    "n_embd": 128,
+    "dropout": 0.1,
+    "bias": true
+  },
+  "train": {
+    "batch_size": 64,
+    "max_steps": 3000,
+    "eval_interval": 250,
+    "eval_batches": 50,
+    "learning_rate": 0.0003,
+    "min_learning_rate": 0.00003,
+    "weight_decay": 0.1,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "grad_clip": 1.0,
+    "warmup_steps": 100,
+    "train_split": 0.9,
+    "seed": 1337,
+    "num_workers": 0,
+    "checkpoint_path": "checkpoints/tiny_shakespeare.pt"
+  }
+}
